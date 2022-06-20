@@ -10,7 +10,7 @@ blueprint = Blueprint('api', __name__, url_prefix='/api')
 # logging.basicConfig(filename=LOGS_PATH, level=logging.INFO, encoding='utf8')
 
 
-@blueprint.route('/posts')
+@blueprint.route('/posts/')
 def get_all_posts():
     """Обрабатывает запрос GET /api/posts и возвращает полный список постов в виде JSON-списка"""
 

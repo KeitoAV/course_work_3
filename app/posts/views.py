@@ -27,7 +27,7 @@ def page_post(post_id):
     return render_template('post.html', post=post, all_comments=all_comments)
 
 
-@blueprint.route('/search')
+@blueprint.route('/search/')
 def search():
     """Страница поиска"""
     logging.info('Страница поиска запрошена')
